@@ -296,9 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const path = window.location.pathname;  
         let page = '';
 
-        if (path === '/RasilForce/public/admin/' || path === '/RasilForce/public/admin') {
-            page = defaultPage;  
-        } else if (path.includes('banners')) {
+       if (path.includes('banners')) {
             page = 'banners';
         } else if (path.includes('posts')) {
             page = 'posts';
@@ -310,7 +308,7 @@ document.addEventListener("DOMContentLoaded", () => {
             page = 'testimonials';
         } 
         else {
-            page = 'default'; 
+            page = 'dashboard'; 
         }
 
         // If the page has changed, load content and scripts

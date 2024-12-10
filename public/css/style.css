@@ -1,58 +1,189 @@
-/* Ensure the sidebar and main content are responsive and aligned */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-.sidebar {
-    position: fixed;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    left: 0;
-    padding-top: 20px;
-    background-color: #f8f9fa;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+header {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 10px 0;}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
 }
 
-.sidebar h3 {
-    margin-bottom: 30px;
+section {
+    padding: 60px 0;
 }
 
-.sidebar ul {
-    padding-left: 0;
-}
-
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: 600;
-}
-
-.sidebar ul li a:hover {
-    color: #0056b3;
-}
-
-.content-area {
-    margin-left: 220px;  /* Make space for sidebar */
+footer {
+    background-color: #222;
+    color: #fff;
     padding: 20px;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding-top: 10px;
-    }
+#contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-    .content-area {
-        margin-left: 0;
-    }
+
+header .container {
+    display: flex;
+    justify-content: space-between;  /* Align logo left and menu right */
+    align-items: center;  /* Vertically align */
+    padding: 0 20px;
+}
+
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display list items in a row */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Darken the background on hover */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.card {
+    background: linear-gradient(145deg, #6a11cb, #2575fc);  /* Purple to blue gradient */
+    color: white;
+    border: none;
+}
+
+/* Customize form elements */
+input[type="email"], input[type="password"] {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+/* Focus effect on input fields */
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #2575fc;  /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.5);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #2575fc;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #6a11cb;  /* Change color on hover */
+    cursor: pointer;
+}
+
+/* Link Styles */
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #6a11cb;  /* Purple color for hover */
+}
+
+/* Customize the container */
+.container {
+    padding-top: 50px;
+}
+
+/* Add subtle shadow to the card */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#single-post .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#single-post .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#single-post .card-text {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+#single-post .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#single-post .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+#single-post .comment-form {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#single-post .comment-form textarea {
+    width: 100%;
+    resize: none;
+}
+
+#single-post .pagination {
+    justify-content: center;
+}
+#testimonial-carousel .carousel-item {
+    text-align: center;
+    padding: 100px;
+}
+
+#testimonial-carousel .carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#testimonial-carousel .carousel-caption p {
+    font-size: 1.1rem;
+    color: #f8f9fa;
+}
+.badge.approved {
+    background-color: #28a745; /* Green for approved */
+    color: white;
+}
+
+.badge.pending {
+    background-color: #ffc107; /* Yellow for pending */
+    color: black;
 }
