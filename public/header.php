@@ -20,7 +20,7 @@
                     }
 
                     echo '<li class="text-white">Welcome, ' . $_SESSION['user_name'] . '</li>
-                          <li><a href="logout.php" class="menu-link text-white">Log out</a></li>';
+                          <li><a href="logout.php" class="menu-link-2 text-white">Log out</a></li>';
                 } else {
                     echo '<li><a href="#" class="menu-link text-white" data-page="login">Login</a></li>';
                 }
